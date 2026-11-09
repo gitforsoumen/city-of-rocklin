@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City of Rocklin | Official Website</title>
+<meta name="description" content="The official website of the City of Rocklin, California — services for visitors, residents and businesses, city news, council and events.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<section class="alert" id="alert" aria-label="Emergency alert">
+  <div class="wrap">
+    <img class="alert__icon" src="assets/icon-alert.svg" alt="">
+    <div>
+      <h2>Heat Emergency in Rocklin</h2>
+      <p>A heat emergency is in place in Rocklin through Friday, July 18. A number of splash pads and City pools are open, and select Rocklin community centres are open as cooling centers during the emergency.</p>
+    </div>
+    <button class="alert__close" type="button" aria-label="Dismiss alert"><img src="assets/icon-close.svg" alt=""></button>
+  </div>
+</section>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar__brand">
+      <b>CITY <span style="font-weight:400">of</span> ROCKLIN</b>
+      <span class="official">An official website of the City of Rocklin. Here's how you know <img src="assets/icon-chevron-down.svg" alt=""></span>
+    </div>
+    <div class="topbar__tools">
+      <button class="lang" type="button"><img src="assets/icon-globe.svg" alt=""> English <img src="assets/icon-chevron-down.svg" alt=""></button>
+      <a class="hide-sm" href="#main">Skip to main content</a>
+      <a class="hide-sm" href="#">Screen reader access</a>
+      <div class="fs" role="group" aria-label="Text size">
+        <button type="button" data-fs="sm" aria-pressed="false" aria-label="Smaller text">A-</button>
+        <button type="button" data-fs="md" aria-pressed="true" aria-label="Default text size">A</button>
+        <button type="button" data-fs="lg" aria-pressed="false" aria-label="Larger text">A+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html" aria-label="City of Rocklin home"><img src="assets/logo.svg" alt="Rocklin, California"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html#visitors">Visitors</a>
+      <a href="index.html#residents">Residents</a>
+      <a href="index.html#business">Business</a>
+      <a href="events.html">Events</a>
+    </nav>
+    <button class="icon-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu"><img src="assets/icon-menu.svg" alt=""></button>
+    <button class="icon-btn" id="searchBtn" type="button" aria-expanded="false" aria-controls="searchPanel" aria-label="Search"><img src="assets/icon-search.svg" alt=""></button>
+  </div>
+  <div class="menu-panel" id="menuPanel" hidden>
+    <div class="mp-main">
+      <p class="mp-label">Main</p>
+      <a href="index.html">Home</a>
+      <a href="index.html#visitors">Visitors</a>
+      <a href="index.html#residents">Residents</a>
+      <a href="index.html#business">Business</a>
+      <a href="events.html">Events</a>
+    </div>
+    <p class="mp-label">Get Started</p>
+    <a href="#">City Council Agendas</a>
+    <a href="#">Agendas &amp; Public Notices</a>
+    <a href="#">Rent a Venue</a>
+    <a href="#">Report an Issue</a>
+    <a href="#">Police Department</a>
+  </div>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form role="search" onsubmit="return false">
+      <label class="sr-only" for="q">Search the site</label>
+      <input class="input" id="q" type="search" placeholder="Search the City of Rocklin website">
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero" id="hero" aria-roledescription="carousel" aria-label="Welcome to Rocklin">
+  <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+    <img src="assets/hero.jpg" alt="Crowd enjoying a summer concert at the Quarry Park Amphitheater" fetchpriority="high">
+    <div class="hero__box">
+      <h1><strong>The City of Rocklin</strong><span>boasts a tight-knit community</span></h1>
+      <a class="btn" href="#visitors">Read More</a>
+    </div>
+  </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+    <img src="assets/hero-2.jpg" alt="Historic white church with a steeple under a blue sky in Rocklin" loading="lazy">
+    <div class="hero__box">
+      <h2><strong>Rooted in history</strong><span>discover Rocklin's historic sites</span></h2>
+      <a class="btn" href="#visitors" tabindex="-1">Explore Sites</a>
+    </div>
+  </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+    <img src="assets/hero-3.jpg" alt="Rocklin clock tower beside the railroad crossing" loading="lazy">
+    <div class="hero__box">
+      <h2><strong>A great place to live</strong><span>services &amp; support for residents</span></h2>
+      <a class="btn" href="#residents" tabindex="-1">Resident Services</a>
+    </div>
+  </div>
+  <div class="dots" role="group" aria-label="Choose slide">
+    <button type="button" aria-label="Show slide 1" aria-current="true"></button>
+    <button type="button" aria-label="Show slide 2"></button>
+    <button type="button" aria-label="Show slide 3"></button>
+  </div>
+</section>
+
+<div class="wrap">
+  <nav class="quick" aria-label="Quick links">
+    <a href="#"><span class="circle-icon"><img class="stack" src="assets/ql-council-a.svg" alt=""><img class="stack" src="assets/ql-council-b.svg" alt=""></span>City Council Agendas</a>
+    <a href="#"><span class="circle-icon"><img src="assets/ql-agendas.svg" alt=""></span>Agendas &amp; Public Notices</a>
+    <a href="#"><span class="circle-icon"><img src="assets/ql-quarry.svg" alt=""></span>Quarry District</a>
+    <a href="#"><span class="circle-icon"><img src="assets/ql-venue.svg" alt=""></span>Rent a Venue</a>
+    <a href="#"><span class="circle-icon"><img src="assets/ql-traffic.svg" alt=""></span>Traffic Alerts</a>
+    <a href="#"><span class="circle-icon"><img src="assets/ql-report.svg" alt=""></span>Report a Issue</a>
+    <a href="#"><span class="circle-icon"><img src="assets/ql-police.svg" alt=""></span>Police Department</a>
+  </nav>
+</div>
+
+<!-- Visitors -->
+<section class="section" id="visitors" aria-labelledby="v-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Visitors</p>
+        <h2 class="title" id="v-title"><strong>Welcome to Rocklin</strong><span>we're glad to have you here!</span></h2>
+      </div>
+      <div class="intro">
+        <p class="body-text">Located in South Placer County at the intersection of Interstate 80 and State Highway 65, Rocklin is characterized by rolling hill terrain with 360-degree panoramic views of the Sierra Nevada mountain range to the northeast and to the Sutter-Butte mountain range in the West.</p>
+        <a class="more" href="#">Read More</a>
+      </div>
+    </div>
+    <div class="cards4">
+      <article class="v-card">
+        <div class="photo-circle"><span><img src="assets/welcome-golf.png" alt="Whitney Oaks Golf Club logo" loading="lazy" style="position:absolute;width:180%;height:180%;max-width:none;left:-41%;top:-44%;object-fit:contain"></span></div>
+        <h3>Golf Rocklin</h3>
+        <p class="body-text clamp3">Rocklin's Whitney Oaks Golf Club is an 18-hole public course that prides itself on providing world-class service and features stunning views across the rolling foothills.</p>
+        <a class="more" href="#">Read More</a>
+      </article>
+      <article class="v-card">
+        <div class="photo-circle"><span><img src="assets/welcome-museum.jpg" alt="Rocklin History Museum sign" loading="lazy" style="object-position:0% 50%"></span></div>
+        <h3>Museums in Rocklin</h3>
+        <p class="body-text clamp3">The Rocklin History Museum is located in the historic Fletcher House on Rocklin Road. Come explore a fascinating collection of local history.</p>
+        <a class="more" href="#">Read More</a>
+      </article>
+      <article class="v-card">
+        <div class="photo-circle"><span><img src="assets/welcome-historic.jpg" alt="Historic white church with steeple" loading="lazy" style="object-position:56% 50%"></span></div>
+        <h3>Historic Sites in Rocklin</h3>
+        <p class="body-text clamp3">Visit Rocklin's historic locations with our virtual tour, or take the text-only tour below, courtesy the Rocklin Historical Society.</p>
+        <a class="more" href="#">Read More</a>
+      </article>
+      <article class="v-card">
+        <div class="photo-circle"><span><img src="assets/welcome-stay.jpg" alt="Staybridge Suites hotel" loading="lazy" style="object-position:0% 50%"></span></div>
+        <h3>Places to Stay in Rocklin</h3>
+        <p class="body-text clamp3">Rocklin is home to several two-star and three-star hotels conveniently located off of either Interstate 80 or Highway 65.</p>
+        <a class="more" href="#">Read More</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Residents -->
+<section class="residents" id="residents" aria-labelledby="r-title">
+  <div class="residents__img"><img src="assets/residents-tower.jpg" alt="Rocklin clock tower at the railroad crossing" loading="lazy"></div>
+  <div class="residents__body">
+    <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Residents</p>
+    <h2 class="title" id="r-title"><strong>Welcome, Rocklin Residents!</strong><span>Resident Services &amp; Support</span></h2>
+    <p class="body-text intro">Located in South Placer County at the intersection of Interstate 80 and State Highway 65, Rocklin is characterized by rolling hill terrain with 360-degree panoramic views of the Sierra Nevada mountain range to the northeast and to the Sutter-Butte mountain range in the West.</p>
+    <a class="more" href="#">Read More</a>
+    <div class="res-grid">
+      <article class="res-item"><header><span class="circle-icon"><img src="assets/res-education.svg" alt=""></span><h3>Education</h3></header><p class="body-text clamp2">The City of Rocklin is the proud home to top-ranked K-12 education and two respected colleges.</p><a class="more" href="#">Read More</a></article>
+      <article class="res-item"><header><span class="circle-icon"><img src="assets/res-parks.svg" alt=""></span><h3>Parks</h3></header><p class="body-text clamp2">The City of Rocklin maintains 37 developed parks and another 200 acres of open space.</p><a class="more" href="#">Read More</a></article>
+      <article class="res-item"><header><span class="circle-icon"><img src="assets/res-transport.svg" alt=""></span><h3>Transportation</h3></header><p class="body-text clamp2">Rocklin benefits from a wide variety of transportation modes, from freeways and rail to local transit.</p><a class="more" href="#">Read More</a></article>
+      <article class="res-item"><header><span class="circle-icon"><img src="assets/res-housing.svg" alt=""></span><h3>Housing</h3></header><p class="body-text clamp2">The Housing Division is part of the City Manager's Office. The division supports affordable housing programs.</p><a class="more" href="#">Read More</a></article>
+      <article class="res-item"><header><span class="circle-icon"><img src="assets/res-safety.svg" alt=""></span><h3>Public Safety</h3></header><p class="body-text clamp2">The City of Rocklin is known for its low crime rate and commitment to community policing.</p><a class="more" href="#">Read More</a></article>
+      <article class="res-item"><header><span class="circle-icon"><img src="assets/res-utilities.svg" alt=""></span><h3>Utilities</h3></header><p class="body-text clamp2">The utilities and services available in Rocklin are all owned and operated by local providers.</p><a class="more" href="#">Read More</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats" aria-label="Rocklin at a glance">
+  <ul class="wrap">
+    <li><span class="ring"><img src="assets/stat-home.svg" alt=""></span><strong>73,000</strong><span>Residents in Rocklin as of 2025</span></li>
+    <li><span class="ring"><img src="assets/stat-road.svg" alt=""></span><strong>22 Miles</strong><span>Northeast of Sacramento</span></li>
+    <li><span class="ring"><img src="assets/stat-park.svg" alt=""></span><strong>38 Parks</strong><span>Residents in Rocklin as of 2025</span></li>
+    <li><span class="ring"><img src="assets/stat-car.svg" alt=""></span><strong>County Transit</strong><span>Placer County Transit Agency (PCTA)</span></li>
+  </ul>
+</section>
+
+<!-- Business -->
+<section class="section" id="business" aria-labelledby="b-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Business</p>
+        <h2 class="title" id="b-title"><strong>Business &amp; Development</strong><span>Your guide to doing business in Rocklin</span></h2>
+      </div>
+      <div class="intro">
+        <p class="body-text">The City of Rocklin is located in South Placer County and is part of the Sacramento-Yolo Consolidated Metropolitan Statistical Area (CMSA).<br>Rocklin is located at the junction of Interstate 80 and State Highway 65. It encompasses 20 square miles...</p>
+        <a class="more" href="#">Read More</a>
+      </div>
+    </div>
+    <div class="cards3">
+      <article class="b-card"><div class="photo-circle"><span><img src="assets/biz-licensing.jpg" alt="Business handshake" loading="lazy" style="object-position:53% 50%"></span></div><div><h3>Business Licensing</h3><p class="body-text clamp3">A business license, also referred to as a business tax certificate, is required of all businesses and in-home businesses operating within the City.</p><a class="more" href="#">Read More</a></div></article>
+      <article class="b-card"><div class="photo-circle"><span><img src="assets/biz-chamber.jpg" alt="Plant growing from a jar of coins" loading="lazy" style="object-position:100% 50%"></span></div><div><h3>Chamber of Commerce</h3><p class="body-text clamp3">The Rocklin Chamber of Commerce is more than a business membership organization - we are the hub of our community.</p><a class="more" href="#">Read More</a></div></article>
+      <article class="b-card"><div class="photo-circle"><span><img src="assets/biz-incentive.jpg" alt="Rising financial chart" loading="lazy" style="object-position:100% 50%"></span></div><div><h3>Incentive Programs</h3><p class="body-text clamp3">Rocklin continues to be named among the best places to live not only in California, but the nation! Check out some of the reasons why.</p><a class="more" href="#">Read More</a></div></article>
+      <article class="b-card"><div class="photo-circle"><span><img src="assets/biz-permit.jpg" alt="Signing a building permit" loading="lazy" style="object-position:64% 50%"></span></div><div><h3>Permit Center</h3><p class="body-text clamp3">All construction activity, from initial grading of a site to interior improvements, alterations and most repairs requires a building permit.</p><a class="more" href="#">Read More</a></div></article>
+      <article class="b-card"><div class="photo-circle"><span><img src="assets/biz-planning.jpg" alt="Modern civic building" loading="lazy" style="object-position:38% 50%"></span></div><div><h3>Planning</h3><p class="body-text clamp3">The Planning Division provides a variety of services including: implementation and monitoring of the City's growth and development.</p><a class="more" href="#">Read More</a></div></article>
+      <article class="b-card"><div class="photo-circle"><span><img src="assets/biz-bids.jpg" alt="Working on a laptop" loading="lazy" style="object-position:50% 50%"></span></div><div><h3>Bids/RFPs</h3><p class="body-text clamp3">The City of Rocklin periodically issues request for proposals, request for qualifications, and/or notice to bidders for professional services.</p><a class="more" href="#">Read More</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- Two-up band -->
+<section class="duo" aria-label="Choose Rocklin and accolades">
+  <a class="duo__item" href="#">
+    <div class="duo__img"><img src="assets/band-rocklin-sign.jpg" alt="Large rusted ROCKLIN letters in a flower garden" loading="lazy"></div>
+    <div class="duo__bar duo__bar--teal">
+      <span class="choose-logo"><img src="assets/band-choose-logo.png" alt="Choose Rocklin"><img class="sky" src="assets/band-choose-skyline.svg" alt=""></span>
+      <h2><strong>Everything you need</strong><span>to start, grow, or build in Rocklin</span></h2>
+    </div>
+  </a>
+  <a class="duo__item" href="#">
+    <div class="duo__img"><img src="assets/band-concert.jpg" alt="Evening concert at the Quarry Park Amphitheater" loading="lazy"></div>
+    <div class="duo__bar duo__bar--gold">
+      <img class="acc" src="assets/band-accolades-icon.svg" alt="">
+      <h2><strong>Rocklin's Accolades</strong><span>Among the best places to live</span></h2>
+    </div>
+  </a>
+</section>
+
+<!-- News -->
+<section class="section" aria-labelledby="n-title">
+  <div class="wrap">
+    <div class="sec-head--center">
+      <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">City News</p>
+      <h2 class="title" id="n-title"><strong>Stay Updated with the Latest News</strong><span>Get the Latest Updates</span></h2>
+    </div>
+    <div class="news">
+      <article class="news-feature">
+        <div class="news-feature__img"><img src="assets/news-main.jpg" alt="Rocklin clock tower with 'Rocklin ranked one of the safest cities in California' banner" loading="lazy"></div>
+        <div class="news-feature__row">
+          <p class="datebadge"><b>26</b><span>July<br>2025</span></p>
+          <div>
+            <h3><a href="#">Rocklin Ranked One Of The Safest Cities In California</a></h3>
+            <p>Rocklin has been named the ninth safest city in California by SafeWise, a leading safety firm specializing in home security advice and services. Last month, SafeWise published its 10th annual safest cities...</p>
+          </div>
+        </div>
+      </article>
+      <div>
+        <ul class="news-list">
+          <li>
+            <div class="photo-circle"><span><img src="assets/news-awards.jpg" alt="Ruhkala award honorees" loading="lazy"></span></div>
+            <div><h3><a href="#">2024 Ruhkala Community Service Awards Honorees</a></h3><p class="clamp3">The Rocklin City Council held a special presentation for the 2024 Ruhkala Community Service Award winners at the April 23 City Council meeting and honored them with an awards reception...</p><p class="meta-date"><img src="assets/icon-calendar.svg" alt="">July 24, 2025</p></div>
+          </li>
+          <li>
+            <div class="photo-circle"><span><img src="assets/news-grazing.jpg" alt="Managed grazing goats" loading="lazy"></span></div>
+            <div><h3><a href="#">Managed Grazing Progressing In Rocklin</a></h3><p class="clamp3">Each year, thousands of goats and sheep work their way across the city, clearing thatch and invasive species to reduce the threat of fire during the peak dry season. Often referred to as "managed grazing," the use of grazing animals...</p><p class="meta-date"><img src="assets/icon-calendar.svg" alt="">July 23, 2025</p></div>
+          </li>
+          <li>
+            <div class="photo-circle"><span><img src="assets/news-rhna.jpg" alt="City Corner: Regional Housing Needs Allocation" loading="lazy"></span></div>
+            <div><h3><a href="#">What is RHNA and how does it affect Rocklin?</a></h3><p class="clamp3">The Regional Housing Needs Allocation, or RHNA, is a report that assesses housing needs for each region of California. Using demographic population information, the California Department of Housing and Community Development (HCD)...</p><p class="meta-date"><img src="assets/icon-calendar.svg" alt="">July 24, 2025</p></div>
+          </li>
+        </ul>
+        <div class="news-more"><a class="btn" href="#">View all News</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Council -->
+<section class="section" style="padding-top:0" aria-labelledby="c-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Council</p>
+        <h2 class="title" id="c-title"><strong>Rocklin City Council</strong><span>The City of Rocklin City Council<br>consists of five members</span></h2>
+      </div>
+      <div class="intro">
+        <p class="body-text">The City of Rocklin City Council consists of five members elected at-large alternately at the general election in November of even-numbered years to serve a four-year term. Councilmembers do not have term limits. The Mayor and Vice Mayor are elected by the City Council each November, usually for a one-year term.</p>
+        <a class="more" href="#">Read More</a>
+      </div>
+    </div>
+    <div class="council">
+      <article class="c-card"><img src="assets/council-gayaldo.jpg" alt="Jill Gayaldo" loading="lazy"><div><h3>Jill Gayaldo</h3><p>Mayor</p></div></article>
+      <article class="c-card"><img src="assets/council-bass.jpg" alt="David Bass" loading="lazy"><div><h3>David Bass</h3><p>Vice-Mayor</p></div></article>
+      <article class="c-card"><img src="assets/council-broadway.jpg" alt="Ken Broadway" loading="lazy"><div><h3>Ken Broadway</h3><p>Councilmember</p></div></article>
+      <article class="c-card"><img src="assets/council-halldin.jpg" alt="Bill Halldin" loading="lazy"><div><h3>Bill Halldin</h3><p>Councilmember</p></div></article>
+      <article class="c-card"><img src="assets/council-janda.jpg" alt="Greg Janda" loading="lazy"><div><h3>Greg Janda</h3><p>Councilmember</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- Events -->
+<section class="section" style="padding-top:0" aria-labelledby="e-title">
+  <div class="wrap sec-head--center">
+    <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Events</p>
+    <h2 class="title" id="e-title"><strong>Stay informed about local happenings</strong><span>Check out events, meetings, and workshops around you</span></h2>
+  </div>
+  <article class="ev-feature">
+    <div class="ev-feature__img"><img src="assets/event-trower.jpg" alt="Robin Trower concert poster, Quarry Park Amphitheater, September 25th" loading="lazy"></div>
+    <div class="ev-feature__body">
+      <span class="tag">Upcoming Events</span>
+      <h3>Evenings in the Park</h3>
+      <h4>Quarry Park &amp; Twin Oaks</h4>
+      <div class="copy">
+        <p>Robin Trower brings legendary blues-rock to Quarry Park – Sept 25<br>Guitar legend Robin Trower is lighting up the Quarry Park Amphitheatre stage on Thursday, September 25, for a night of soulful, electrifying blues-rock. With a career spanning over half a century—starting with Procol Harum and soaring through iconic solo releases like Bridge of Sighs—Trower remains a powerhouse of guitar artistry.</p>
+        <p>Expect to hear his signature tunes—like the thrilling "Day of the Eagle," the classic "Too Rolling Stoned," and the haunting "Bridge of Sighs"—all brought to life with raw passion and masterful tone. Plus, fans will get a taste of his newest studio work, come and find me, featuring the recently released single "I Would Lose My Mind," out now.</p>
+        <p>This intimate rock-and-roll evening under the stars is a rare opportunity to experience a true guitar icon up close. Tickets are available now—claim yours and prepare for a night of unforgettable riffs and atmosphere at Quarry Park.</p>
+        <p>Get access to presale tickets on Wednesday June 11 at 10am by using the code ROCKLIN.<br>Main sale tickets go on sale Friday, June 13th at 10am!</p>
+      </div>
+      <ul class="ev-meta">
+        <li><img src="assets/icon-location.svg" alt="Location">Quarry Park Amphitheater, 4000 Rocklin Road</li>
+        <li><img src="assets/icon-calendar.svg" alt="Date">Thursday, Sept. 25, 2025</li>
+        <li><img src="assets/icon-clock.svg" alt="Time">Doors open at 6 PM, show starts at 7 PM</li>
+      </ul>
+      <a class="btn" href="event-details.html">Read More</a>
+    </div>
+  </article>
+  <div class="wrap">
+    <div class="ev-cards">
+      <a class="ev-card" href="event-details.html">
+        <div class="ev-card__img"><img src="assets/event-dancing.jpg" alt="You Should Be Dancing poster: Saturday, Oct 18th" loading="lazy"></div>
+        <span class="tag">Upcoming Events</span>
+        <h3 title="You Should Be Dancing: A Tribute to the Bee Gees">You Should Be Dancing: A Tribute to the Bee Gees</h3>
+        <h4>Quarry Park Amphitheater</h4>
+        <p class="clamp2">Put on your boogie shoes and get ready to dance the night away! “You Should Be Dancing – A Tribute to the Bee Gees” is coming to Quarry Park Amphitheater in Rocklin on Saturday, October 18, 2025, bringing the timeless disco-era energy of one of music’s most legendary groups to life.</p>
+        <ul class="ev-meta">
+          <li><img src="assets/icon-location.svg" alt="Location"><span>Quarry Park Amphitheater, 4000 Rocklin Road</span></li>
+          <li><img src="assets/icon-calendar.svg" alt="Date"><span>Saturday, October 18, 2025</span></li>
+          <li><img src="assets/icon-clock.svg" alt="Time"><span>Doors open at 6 PM, show starts at 7 PM</span></li>
+        </ul>
+      </a>
+      <a class="ev-card" href="event-details.html">
+        <div class="ev-card__img"><img src="assets/event-everclear.jpg" alt="Everclear Sparkle and Fade 30th anniversary tour poster: Sunday, Sept 7th" loading="lazy"></div>
+        <span class="tag">Upcoming Events</span>
+        <h3 title="Everclear">Everclear</h3>
+        <h4>Quarry Park Amphitheater</h4>
+        <p class="clamp2">Everclear is bringing their high-energy, hook-filled alt-rock anthems to Quarry Park Amphitheater on September 7 for a night of pure ’90s nostalgia and powerhouse performances!</p>
+        <ul class="ev-meta">
+          <li><img src="assets/icon-location.svg" alt="Location"><span>Quarry Park Amphitheater, 4000 Rocklin Road</span></li>
+          <li><img src="assets/icon-calendar.svg" alt="Date"><span>Sunday, September 7, 2025</span></li>
+          <li><img src="assets/icon-clock.svg" alt="Time"><span>Doors open at 5:30 PM, show starts at 6:30 PM</span></li>
+        </ul>
+      </a>
+      <a class="ev-card" href="event-details.html">
+        <div class="ev-card__img"><img src="assets/event-evenings.jpg" alt="Evenings in the Park poster: Moana 2, August 15, 2025 at Quarry Park" loading="lazy"></div>
+        <span class="tag">Upcoming Events</span>
+        <h3 title="Evenings in the Park">Evenings in the Park</h3>
+        <h4>Quarry Park &amp; Twin Oaks</h4>
+        <p class="clamp2">Step into the rhythm of community spirit at Evenings in the Park – where the parks come alive with music, laughter, and boundless joy! Get ready for an unforgettable evening under the open sky, filled with the pulse of local talent, enticing aromas from food trucks, and the vibrant energy of artisan vendors showcasing their finest crafts.</p>
+        <ul class="ev-meta">
+          <li><img src="assets/icon-location.svg" alt="Location"><span>Quarry Park, Twin Oaks, Quarry Park &amp; Quarry Park</span></li>
+          <li><img src="assets/icon-calendar.svg" alt="Date"><span>4/11, 5/30, 8/15, &amp; 10/17</span></li>
+          <li><img src="assets/icon-clock.svg" alt="Time"><span>6 PM (movie starts after dusk)</span></li>
+        </ul>
+      </a>
+      <a class="ev-card" href="event-details.html">
+        <div class="ev-card__img"><img src="assets/event-toad.jpg" alt="Toad the Wet Sprocket poster: Sunday, July 20th" loading="lazy"></div>
+        <span class="tag">Upcoming Events</span>
+        <h3 title="Toad the Wet Sprocket &amp; Sixpence None the Richer">Toad the Wet Sprocket &amp; Sixpence None the Richer</h3>
+        <h4>Quarry Park Amphitheater</h4>
+        <p class="clamp2">Get ready for a nostalgic summer evening as Toad the Wet Sprocket and Sixpence None the Richer take the stage at Quarry Park Amphitheater on July 20! This is your chance to experience two legendary bands delivering the hits that defined a generation.</p>
+        <ul class="ev-meta">
+          <li><img src="assets/icon-location.svg" alt="Location"><span>Quarry Park Amphitheater, 4000 Rocklin Road</span></li>
+          <li><img src="assets/icon-calendar.svg" alt="Date"><span>Sunday, July 20, 2025</span></li>
+          <li><img src="assets/icon-clock.svg" alt="Time"><span>Doors open at 5 PM, show starts at 6 PM</span></li>
+        </ul>
+      </a>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="events.html">More Events</a>
+      <a class="btn btn--outline" href="events.html#calendar">Full Calendar</a>
+    </div>
+  </div>
+</section>
+
+<!-- Access Rocklin -->
+<section class="access" aria-labelledby="a-title">
+  <img class="shape-l" src="assets/report-shape-left.svg" alt="">
+  <img class="shape-r" src="assets/report-shape-right.svg" alt="">
+  <div class="wrap">
+    <div class="access__text">
+      <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Report</p>
+      <h2 class="title" id="a-title"><strong>Access Rocklin</strong><span>An easy way to report a problem or<br>send questions &amp; comments directly to city staff</span></h2>
+      <div class="copy body-text cap">
+        <p>Access Rocklin is a mobile app and web portal service that allows citizens to report a problem or send questions and comments directly to city staff. Residents can report a variety of issues including property maintenance, noise, parking, traffic complaints and much more.</p>
+        <p>You can use Access Rocklin from a web browser, or with the Access Rocklin mobile app, available for iOS or Android.</p>
+      </div>
+      <div class="stores">
+        <a href="#" aria-label="Download on the App Store"><img src="assets/store-badges.svg" alt=""></a>
+        <a href="#" aria-label="Get it on Google Play"><img src="assets/store-badges.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <img class="p-l" src="assets/phone-left.png" alt="" loading="lazy">
+      <img class="p-c" src="assets/phone-center.png" alt="" loading="lazy">
+      <img class="p-r" src="assets/phone-right.png" alt="" loading="lazy">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<section class="subscribe" aria-labelledby="nl-title">
+  <div class="wrap">
+    <div class="nl-list" role="tablist" aria-label="Newsletters">
+      <button role="tab" type="button" aria-selected="false" data-sub="Get the latest news and announcements from the City of Rocklin.">City Newsletter</button>
+      <button role="tab" type="button" aria-selected="false" data-sub="Get the latest parks, programs and recreation news in Rocklin.">Parks &amp; Recreation Newsletter</button>
+      <button role="tab" type="button" aria-selected="true" data-sub="Get the latest economic development news in the City of Rocklin.">Choose Rocklin Economic Development Newsletter</button>
+      <button role="tab" type="button" aria-selected="false" data-sub="Get City Council and committee agendas as soon as they are posted.">City Agendas and Committees</button>
+      <button role="tab" type="button" aria-selected="false" data-sub="Be the first to hear about new job openings at the City of Rocklin.">Job Openings</button>
+    </div>
+    <div>
+      <p class="eyebrow"><img src="assets/eyebrow-skyline.svg" alt="">Newsletters</p>
+      <h2 class="title" id="nl-title"><strong>Subscribe to City Newsletters</strong><span id="nl-sub">Get the latest economic development news in the City of Rocklin.</span></h2>
+      <form class="nl-form" id="nlForm" novalidate>
+        <label class="sr-only" for="nl-email">Email address</label>
+        <input class="input" id="nl-email" type="email" placeholder="Enter your email address" required>
+        <label class="sr-only" for="nl-name">First name</label>
+        <input class="input" id="nl-name" type="text" placeholder="Enter your first name">
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
+      <p class="nl-msg" id="nlMsg" role="status"></p>
+      <p class="consent">By submitting this form, you are consenting to receive marketing emails from: City of Rocklin, 3970 Rocklin Road, Rocklin, CA, 95677, US, http://rocklin.ca.us. You can revoke your consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of every email. <span>Emails are serviced by Constant Contact.</span></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="footer__logo" href="index.html"><img src="assets/footer-logo.svg" alt="Rocklin, California"></a>
+        <ul class="contacts">
+          <li><img src="assets/icon-location-white.svg" alt="">3970 Rocklin Road Rocklin, CA, 95677</li>
+          <li><img src="assets/icon-phone-white.svg" alt=""><a href="tel:+19166255000">(916) 625-5000</a></li>
+          <li><img src="assets/icon-fax-white.svg" alt=""><span><span class="sr-only">Fax </span>(916) 625-5095</span></li>
+          <li><img src="assets/icon-print-white.svg" alt=""><a href="tel:+19166324013">(916) 632-4013</a></li>
+        </ul>
+        <div class="partners">
+          <p class="fhead">Partners</p>
+          <img src="assets/footer-quarry.png" alt="Quarry Park Adventures" width="159">
+          <img src="assets/footer-astound.svg" alt="Astound Broadband" width="136">
+        </div>
+      </div>
+      <div class="fcol">
+        <p class="fhead">Locations</p>
+        <ul><li><a href="#">City Government</a></li><li><a href="#">Historical Sites</a></li><li><a href="#">Fire Administration</a></li><li><a href="#">Parks</a></li><li><a href="#">Police Station</a></li><li><a href="#">Quarry District</a></li></ul>
+      </div>
+      <div class="fcol">
+        <p class="fhead">Resources</p>
+        <ul><li><a href="#">Accessibility</a></li><li><a href="#">Employment</a></li><li><a href="#">Bids and RFPs</a></li><li><a href="#">Sitemap</a></li><li><a href="#">Volunteer</a></li><li><a href="#">Web Policies</a></li></ul>
+      </div>
+      <div class="fcol">
+        <p class="fhead">Connect</p>
+        <ul><li><a href="#">Contact Us</a></li><li><a href="#">City Newsroom</a></li><li><a href="#">City Phone Numbers</a></li><li><a href="#">eNewsletter Signup</a></li><li><a href="#">Social Media</a></li></ul>
+      </div>
+      <div class="fcol">
+        <p class="fhead">Get Started</p>
+        <ul><li><a href="#">City Council Agendas</a></li><li><a href="#">Agendas &amp; Public Notices</a></li><li><a href="#">Quarry District</a></li><li><a href="#">Job Openings</a></li><li><a href="#">Rent a Venue</a></li><li><a href="#">View Traffic Alerts</a></li><li><a href="#">Report a Community Issue</a></li><li><a href="#">Police Department</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 The City of Rocklin</p>
+      <div class="social">
+        <span>Find us on</span>
+        <ul>
+          <li><a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt=""></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt=""></a></li>
+          <li><a href="#" aria-label="X"><img src="assets/icon-x.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
