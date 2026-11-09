@@ -54,24 +54,8 @@
       <a href="index.html#business">Business</a>
       <a href="events.html">Events</a>
     </nav>
-    <button class="icon-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu"><img src="assets/icon-menu.svg" alt=""></button>
+    <button class="icon-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><img src="assets/icon-menu.svg" alt=""></button>
     <button class="icon-btn" id="searchBtn" type="button" aria-expanded="false" aria-controls="searchPanel" aria-label="Search"><img src="assets/icon-search.svg" alt=""></button>
-  </div>
-  <div class="menu-panel" id="menuPanel" hidden>
-    <div class="mp-main">
-      <p class="mp-label">Main</p>
-      <a href="index.html">Home</a>
-      <a href="index.html#visitors">Visitors</a>
-      <a href="index.html#residents">Residents</a>
-      <a href="index.html#business">Business</a>
-      <a href="events.html">Events</a>
-    </div>
-    <p class="mp-label">Get Started</p>
-    <a href="#">City Council Agendas</a>
-    <a href="#">Agendas &amp; Public Notices</a>
-    <a href="#">Rent a Venue</a>
-    <a href="#">Report an Issue</a>
-    <a href="#">Police Department</a>
   </div>
   <div class="search-panel" id="searchPanel" hidden>
     <form role="search" onsubmit="return false">
@@ -81,6 +65,37 @@
     </form>
   </div>
 </header>
+
+<div class="drawer-overlay" id="drawerOverlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Site menu" aria-hidden="true" tabindex="-1">
+  <div class="drawer__head">
+    <a href="index.html" class="drawer__logo"><img src="assets/logo.svg" alt="Rocklin, California" width="96"></a>
+    <button class="drawer__close" id="drawerClose" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer__nav" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="index.html#visitors">Visitors</a>
+    <a href="index.html#residents">Residents</a>
+    <a href="index.html#business">Business</a>
+    <a href="events.html">Events</a>
+  </nav>
+  <p class="drawer__label">Get Started</p>
+  <ul class="drawer__quick">
+    <li><a href="#"><span class="dq-icon"><img src="assets/ql-agendas.svg" alt=""></span>City Council Agendas</a></li>
+    <li><a href="#"><span class="dq-icon"><img src="assets/ql-quarry.svg" alt=""></span>Quarry District</a></li>
+    <li><a href="#"><span class="dq-icon"><img src="assets/ql-venue.svg" alt=""></span>Rent a Venue</a></li>
+    <li><a href="#"><span class="dq-icon"><img src="assets/ql-traffic.svg" alt=""></span>Traffic Alerts</a></li>
+    <li><a href="#"><span class="dq-icon"><img src="assets/ql-report.svg" alt=""></span>Report an Issue</a></li>
+    <li><a href="#"><span class="dq-icon"><img src="assets/ql-police.svg" alt=""></span>Police Department</a></li>
+  </ul>
+  <div class="drawer__contact">
+    <p class="drawer__label">Contact</p>
+    <p>3970 Rocklin Road<br>Rocklin, CA 95677</p>
+    <p><a href="tel:+19166255000">(916) 625-5000</a></p>
+  </div>
+</aside>
 <main id="main">
 
 <section class="hero" id="hero" aria-roledescription="carousel" aria-label="Welcome to Rocklin">
@@ -482,6 +497,11 @@
     </div>
   </div>
 </footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg class="to-top__ring" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="25"/></svg>
+  <svg class="to-top__arrow" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 
 <script src="js/main.js"></script>
 </body>
